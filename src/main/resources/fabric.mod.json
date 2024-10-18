@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "example",
+	"version": "${version}",
+	"name": "Example",
+	"description": "Mod test",
+	"authors": [
+		"Meownington"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/example/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.Example"
+		],
+		"fabric-datagen": [
+			"com.example.ExampleDataGenerator"
+		],
+		"client": [
+			"com.example.ExampleClient"
+		]
+	},
+	"mixins": [
+		"example.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
